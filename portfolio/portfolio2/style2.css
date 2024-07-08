@@ -1,0 +1,279 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    transition: background-color 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: #4a148c !important;
+}
+
+.masthead {
+    position: relative;
+    background: url('../img/your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+}
+
+.masthead .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.masthead-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.masthead-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.masthead-subheading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffeb3b;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #4a148c;
+    position: relative;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ffeb3b;
+    margin: 1rem auto;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial .lead {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #4a148c;
+    padding: 20px 0;
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: #ffeb3b;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: #ffeb3b !important;
+}
+
+.btn-primary {
+    background-color: #ffeb3b;
+    border: none;
+    color: #4a148c;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #ffd740;
+    color: #4a148c;
+}
+
+.btn-xl {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    border-radius: 10rem;
+    background-color: #ffeb3b;
+    color: #4a148c;
+    border: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-xl:hover {
+    background-color: #ffd740;
+    color: #4a148c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    transition: background-color 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: #4a148c !important;
+}
+
+/* New styles for enhanced look */
+
+/* Header background color */
+.masthead {
+    background-color: #4a148c;
+}
+
+/* About section background color */
+#about {
+    background-color: #d1c4e9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Skills section background color */
+#skills {
+    background-color: #ede7f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Portfolio section background color */
+#portfolio {
+    background-color: #e1bee7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Experience section background color */
+#experience {
+    background-color: #b39ddb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Contact section background color */
+#contact {
+    background-color: #9575cd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Custom Styles */
+/* Your existing custom styles */
+
+/* Profile Picture */
+.profile-picture {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    left: 2px; /* Adjust as needed */
+    z-index: 9999; /* Ensure it's above other content */
+}
+.img-profile {
+    width: 150px; /* Adjust width */
+    height: autopx; /* Adjust height */
+}
+

@@ -1,0 +1,70 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .sidebar {
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 250px;
+            background-color: #343a40;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        .sidebar a:hover {
+            background-color: #575d63;
+        }
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        #about, #projects, #contact {
+            padding: 50px 0;
+        }
+        #projects {
+            background-color: #f8f9fa;
+        }
+        .project-card {
+            margin: 20px 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {float: left;}
+            .main-content {margin-left: 0;}
+        }
+    .container img{
+        width:200px;
+        height:250px;
+    }

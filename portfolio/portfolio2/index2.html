@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Advanced Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <style>
+        /* Additional CSS for profile picture */
+        .profile-picture {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- New list items for GitHub and LinkedIn links -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jasmine-yadav-a8a426263/">LinkedIn</a>
+                    </li>
+                    <!-- End of new list items -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Picture -->
+    <div class="profile-picture">
+        <img src="MyPhoto.jpeg" class="img-fluid rounded-circle img-profile" alt="Profile Picture">
+
+    </div>
+
+    <!-- Header -->
+    <header id="home" class="masthead text-center text-white">
+        <div class="overlay"></div>
+        <div class="masthead-content">
+            <div class="container">
+                <h1 class="masthead-heading mb-0">Welcome to My Portfolio</h1>
+                <h2 class="masthead-subheading mb-0">Showcasing My Work & Projects</h2>
+                <a href="#about" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>About Me</h2>
+                    <p class="lead">I am a passionate developer with experience in various technologies. I enjoy creating beautiful and functional web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="text-center">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x mb-3"></i>
+                    <h4>Web Development</h4>
+                    <p>HTML, CSS, JavaScript, React, Angular</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h4>Backend Development</h4>
+                    <p>Node.js, Express, MongoDB, SQL</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cloud fa-3x mb-3"></i>
+                    <h4>Cloud & DevOps</h4>
+                    <p>AWS, Docker, Kubernetes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="text-center bg-light">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Screenshot (182).png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">STRING VIZUALIZER</h5>
+                            <p class="card-text">A simple sorting visualizer project using HTML, CSS, and JavaScript to demonstrate the bubble sort algorithm..</p>
+                            <a href="https://github.com/jasmineyadav7788/Sorting_visualiser" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/portfolio2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 2</h5>
+                            <p class="card-text">Brief description of the project.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/portfolio3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title 3</h5>
+                            <p class="card-text">Brief description of the project.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="text-center">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="testimonial">
+                        <img src="img/testimonial1.jpg" class="rounded-circle mb-3" alt="Experience 1">
+                        <p class="lead">"Worked as a intern EDUFUSE Company for 2 month. Successfully developed Application server (NodeJS and Express),UI/UX Design (React js), and Database management (MongoDB)"</p>
+                        <p>- Jasmine yadav, Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 My Portfolio. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
